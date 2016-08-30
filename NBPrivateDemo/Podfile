@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'NBPrivateDemo' do
+    pod 'SwiftyJSON', '~> 2.3.2'
+    pod 'Alamofire', '~> 3.4.1'
+    pod 'RxSwift', '~> 2.6.0'
+end

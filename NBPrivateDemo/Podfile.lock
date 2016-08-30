@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.4.2)
+  - RxSwift (2.6.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4.1)
+  - RxSwift (~> 2.6.0)
+  - SwiftyJSON (~> 2.3.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
