@@ -7,8 +7,7 @@
 //
 
 import Foundation
-
-class NBViewModelServicesImpl {
-    func main(){
-    }
+/// 对NBViewModelseServices的实现
+class NBViewModelServicesImpl : NBViewModelseServices{
+    
 }

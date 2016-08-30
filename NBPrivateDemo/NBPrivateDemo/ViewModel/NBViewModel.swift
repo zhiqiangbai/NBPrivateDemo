@@ -8,9 +8,11 @@
 
 import Foundation
 
-class NBViewModel:NSObject{
-    func initWithServices<T>(service:T, parmas:Dictionary<String,AnyObject>)->NBViewModel{
+/// 基类Model
+class NBViewModel{
     
+    func initWithServices<T>(service:T, parmas:Dictionary<String,AnyObject>)->NBViewModel{
+        
         return self
     }
 }

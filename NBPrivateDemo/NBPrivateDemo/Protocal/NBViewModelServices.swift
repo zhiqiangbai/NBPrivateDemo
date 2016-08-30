@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ *NBViewModelseServices协议类,用于
+ */
 protocol NBViewModelseServices {
     
 }
