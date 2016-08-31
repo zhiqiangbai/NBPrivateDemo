@@ -85,11 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-NBPrivateDemo/Alamofire.framework"
+  install_framework "Pods-NBPrivateDemo/RxCocoa.framework"
   install_framework "Pods-NBPrivateDemo/RxSwift.framework"
   install_framework "Pods-NBPrivateDemo/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-NBPrivateDemo/Alamofire.framework"
+  install_framework "Pods-NBPrivateDemo/RxCocoa.framework"
   install_framework "Pods-NBPrivateDemo/RxSwift.framework"
   install_framework "Pods-NBPrivateDemo/SwiftyJSON.framework"
 fi

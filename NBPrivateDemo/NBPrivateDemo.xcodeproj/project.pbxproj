@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		440D7C931D7589E300143822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7C921D7589E300143822 /* AppDelegate.swift */; };
 		440D7C951D7589E300143822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7C941D7589E300143822 /* ViewController.swift */; };
-		440D7C981D7589E300143822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440D7C961D7589E300143822 /* Main.storyboard */; };
 		440D7C9A1D7589E300143822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440D7C991D7589E300143822 /* Assets.xcassets */; };
 		440D7C9D1D7589E300143822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440D7C9B1D7589E300143822 /* LaunchScreen.storyboard */; };
 		440D7CA81D7589E300143822 /* NBPrivateDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CA71D7589E300143822 /* NBPrivateDemoTests.swift */; };
@@ -18,6 +17,14 @@
 		440D7CC71D758F8E00143822 /* NBViewModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CC61D758F8E00143822 /* NBViewModelServices.swift */; };
 		440D7CC91D758FAC00143822 /* NBNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CC81D758FAC00143822 /* NBNavigationProtocol.swift */; };
 		440D7CCC1D758FDF00143822 /* NBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CCB1D758FDF00143822 /* NBViewModel.swift */; };
+		440D7CD01D767CB900143822 /* NBNavigationControllerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CCF1D767CB900143822 /* NBNavigationControllerStack.swift */; };
+		440D7CD61D76891100143822 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CD51D76891000143822 /* HomeViewModel.swift */; };
+		440D7CD91D768E6B00143822 /* NBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CD81D768E6B00143822 /* NBRouter.swift */; };
+		440D7CDB1D76AC3500143822 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CDA1D76AC3500143822 /* Alamofire.framework */; };
+		440D7CDD1D76AC3A00143822 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CDC1D76AC3A00143822 /* RxSwift.framework */; };
+		440D7CDF1D76AC3D00143822 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */; };
+		440D7CE11D76C9F900143822 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CE01D76C9F900143822 /* RxCocoa.framework */; };
+		440D7CE41D76CECC00143822 /* NBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CE31D76CECC00143822 /* NBViewController.swift */; };
 		89D353851DFBD9DD6C0F8304 /* Pods_NBPrivateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE1C799A3A1B84FB453313F /* Pods_NBPrivateDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +49,6 @@
 		440D7C8F1D7589E300143822 /* NBPrivateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPrivateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		440D7C921D7589E300143822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		440D7C941D7589E300143822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		440D7C971D7589E300143822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		440D7C991D7589E300143822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440D7C9C1D7589E300143822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440D7C9E1D7589E300143822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +62,15 @@
 		440D7CC61D758F8E00143822 /* NBViewModelServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBViewModelServices.swift; path = Protocal/NBViewModelServices.swift; sourceTree = "<group>"; };
 		440D7CC81D758FAC00143822 /* NBNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBNavigationProtocol.swift; path = Protocal/NBNavigationProtocol.swift; sourceTree = "<group>"; };
 		440D7CCB1D758FDF00143822 /* NBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBViewModel.swift; path = ViewModel/NBViewModel.swift; sourceTree = "<group>"; };
+		440D7CCF1D767CB900143822 /* NBNavigationControllerStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBNavigationControllerStack.swift; path = Stack/NBNavigationControllerStack.swift; sourceTree = "<group>"; };
+		440D7CD11D767FAE00143822 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		440D7CD51D76891000143822 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Home/ViewModel/HomeViewModel.swift; sourceTree = "<group>"; };
+		440D7CD81D768E6B00143822 /* NBRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBRouter.swift; path = Utils/NBRouter.swift; sourceTree = "<group>"; };
+		440D7CDA1D76AC3500143822 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		440D7CDC1D76AC3A00143822 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
+		440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		440D7CE01D76C9F900143822 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
+		440D7CE31D76CECC00143822 /* NBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBViewController.swift; path = BaseViewController/NBViewController.swift; sourceTree = "<group>"; };
 		6299E8A2C37570BE4726CB9F /* Pods-NBPrivateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPrivateDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBPrivateDemo/Pods-NBPrivateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6FE1C799A3A1B84FB453313F /* Pods_NBPrivateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBPrivateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2235F9DC6757564C866FA8 /* Pods-NBPrivateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPrivateDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBPrivateDemo/Pods-NBPrivateDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440D7CE11D76C9F900143822 /* RxCocoa.framework in Frameworks */,
+				440D7CDF1D76AC3D00143822 /* SwiftyJSON.framework in Frameworks */,
+				440D7CDD1D76AC3A00143822 /* RxSwift.framework in Frameworks */,
+				440D7CDB1D76AC3500143822 /* Alamofire.framework in Frameworks */,
 				89D353851DFBD9DD6C0F8304 /* Pods_NBPrivateDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +109,10 @@
 		0B6E9ABA73F9E7C4E9EBF769 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				440D7CE01D76C9F900143822 /* RxCocoa.framework */,
+				440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */,
+				440D7CDC1D76AC3A00143822 /* RxSwift.framework */,
+				440D7CDA1D76AC3500143822 /* Alamofire.framework */,
 				6FE1C799A3A1B84FB453313F /* Pods_NBPrivateDemo.framework */,
 			);
 			name = Frameworks;
@@ -98,6 +121,7 @@
 		440D7C861D7589E300143822 = {
 			isa = PBXGroup;
 			children = (
+				440D7CD11D767FAE00143822 /* MyPlayground.playground */,
 				440D7C911D7589E300143822 /* NBPrivateDemo */,
 				440D7CA61D7589E300143822 /* NBPrivateDemoTests */,
 				440D7CB11D7589E300143822 /* NBPrivateDemoUITests */,
@@ -120,12 +144,15 @@
 		440D7C911D7589E300143822 /* NBPrivateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				440D7CE21D76CEA900143822 /* BaseViewController */,
+				440D7CD21D7688E000143822 /* Home */,
+				440D7CD71D768E4D00143822 /* Utils */,
+				440D7CCE1D767C9600143822 /* Stack */,
 				440D7CCA1D758FC700143822 /* ViewModel */,
 				440D7CC31D758F2C00143822 /* Impl */,
 				440D7CC01D7589F000143822 /* Protocal */,
 				440D7C921D7589E300143822 /* AppDelegate.swift */,
 				440D7C941D7589E300143822 /* ViewController.swift */,
-				440D7C961D7589E300143822 /* Main.storyboard */,
 				440D7C991D7589E300143822 /* Assets.xcassets */,
 				440D7C9B1D7589E300143822 /* LaunchScreen.storyboard */,
 				440D7C9E1D7589E300143822 /* Info.plist */,
@@ -174,6 +201,54 @@
 				440D7CCB1D758FDF00143822 /* NBViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		440D7CCE1D767C9600143822 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				440D7CCF1D767CB900143822 /* NBNavigationControllerStack.swift */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		440D7CD21D7688E000143822 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440D7CD41D7688F200143822 /* ViewModel */,
+				440D7CD31D7688E800143822 /* ViewController */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		440D7CD31D7688E800143822 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		440D7CD41D7688F200143822 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				440D7CD51D76891000143822 /* HomeViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		440D7CD71D768E4D00143822 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				440D7CD81D768E6B00143822 /* NBRouter.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		440D7CE21D76CEA900143822 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				440D7CE31D76CECC00143822 /* NBViewController.swift */,
+			);
+			name = BaseViewController;
 			sourceTree = "<group>";
 		};
 		822B749436EBB1D483C04AC9 /* Pods */ = {
@@ -294,7 +369,6 @@
 			files = (
 				440D7C9D1D7589E300143822 /* LaunchScreen.storyboard in Resources */,
 				440D7C9A1D7589E300143822 /* Assets.xcassets in Resources */,
-				440D7C981D7589E300143822 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +442,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				440D7CC91D758FAC00143822 /* NBNavigationProtocol.swift in Sources */,
+				440D7CD01D767CB900143822 /* NBNavigationControllerStack.swift in Sources */,
 				440D7CC71D758F8E00143822 /* NBViewModelServices.swift in Sources */,
+				440D7CD91D768E6B00143822 /* NBRouter.swift in Sources */,
+				440D7CD61D76891100143822 /* HomeViewModel.swift in Sources */,
 				440D7CCC1D758FDF00143822 /* NBViewModel.swift in Sources */,
 				440D7C951D7589E300143822 /* ViewController.swift in Sources */,
 				440D7CC51D758F4D00143822 /* NBViewModelServicesImpl.swift in Sources */,
+				440D7CE41D76CECC00143822 /* NBViewController.swift in Sources */,
 				440D7C931D7589E300143822 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,14 +486,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		440D7C961D7589E300143822 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				440D7C971D7589E300143822 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		440D7C9B1D7589E300143822 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -469,6 +539,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -506,6 +577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -514,11 +586,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE2235F9DC6757564C866FA8 /* Pods-NBPrivateDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NBPrivateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.napoleonbai.NBPrivateDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -526,11 +604,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6299E8A2C37570BE4726CB9F /* Pods-NBPrivateDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = NBPrivateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.napoleonbai.NBPrivateDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

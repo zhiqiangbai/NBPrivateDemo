@@ -12,10 +12,32 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var services : NBViewModelServicesImpl?
+    
+    private var mNavigationControllerStack : NBNavigationControllerStack?
+    
+    var navigationControlllerStack : NBNavigationControllerStack?{
+        get{
+            return self.mNavigationControllerStack
+        }
+        set{
+            self.mNavigationControllerStack = navigationControlllerStack
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        self.services = NBViewModelServicesImpl()
+        self.mNavigationControllerStack = NBNavigationControllerStack(services: self.services!)
+        
+        let homeViewModel : HomeViewModel = HomeViewModel(service:self.services,parmas: ["title":"home"])
+        self.services?.resetRootViewModel(homeViewModel)
+   
+        self.window?.makeKeyAndVisible()
         return true
     }
 
