@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// 存放ViewModel以及对应的Controller, 包含通过ViewModel找到Controller对象等
 class NBRouter:NSObject{
     ///私有化构造方法
     private override init() {
@@ -15,7 +15,7 @@ class NBRouter:NSObject{
     }
     //单例对象
     static let defaultRouter = NBRouter()
- 
+    //此处必须保证ViewController继承自 NBViewController
     let viewModelViewMappings : Dictionary<String,String>=[
                                                             "HomeViewModel":"ViewController"
                                                         ];

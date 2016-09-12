@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- *NBViewModelseServices协议类,用于
+ NBViewModelseServices协议类,用于
  */
 protocol NBViewModelServices : NBNavigationProtocol{
     

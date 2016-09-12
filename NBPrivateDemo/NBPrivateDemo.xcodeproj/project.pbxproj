@@ -25,6 +25,10 @@
 		440D7CDF1D76AC3D00143822 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */; };
 		440D7CE11D76C9F900143822 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440D7CE01D76C9F900143822 /* RxCocoa.framework */; };
 		440D7CE41D76CECC00143822 /* NBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7CE31D76CECC00143822 /* NBViewController.swift */; };
+		4465840F1D86899F002A28FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465840D1D86899E002A28FE /* Result.framework */; };
+		446584101D8689C2002A28FE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465840C1D86899E002A28FE /* ReactiveCocoa.framework */; };
+		446584111D8689C2002A28FE /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4465840C1D86899E002A28FE /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4466B0E71D86AEE0008E787D /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466B0E61D86AEE0008E787D /* RAC.swift */; };
 		89D353851DFBD9DD6C0F8304 /* Pods_NBPrivateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE1C799A3A1B84FB453313F /* Pods_NBPrivateDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,20 @@
 			remoteInfo = NBPrivateDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		446584121D8689C2002A28FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				446584111D8689C2002A28FE /* ReactiveCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		440D7C8F1D7589E300143822 /* NBPrivateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPrivateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +89,9 @@
 		440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		440D7CE01D76C9F900143822 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
 		440D7CE31D76CECC00143822 /* NBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBViewController.swift; path = BaseViewController/NBViewController.swift; sourceTree = "<group>"; };
+		4465840C1D86899E002A28FE /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		4465840D1D86899E002A28FE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../../Library/Developer/Xcode/DerivedData/NBPrivateDemo-ahcbuecvmsngrcgjblznctneqeqd/Build/Products/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
+		4466B0E61D86AEE0008E787D /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RAC.swift; path = Utils/RAC.swift; sourceTree = "<group>"; };
 		6299E8A2C37570BE4726CB9F /* Pods-NBPrivateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPrivateDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBPrivateDemo/Pods-NBPrivateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6FE1C799A3A1B84FB453313F /* Pods_NBPrivateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBPrivateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2235F9DC6757564C866FA8 /* Pods-NBPrivateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPrivateDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBPrivateDemo/Pods-NBPrivateDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,9 +102,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4465840F1D86899F002A28FE /* Result.framework in Frameworks */,
 				440D7CE11D76C9F900143822 /* RxCocoa.framework in Frameworks */,
 				440D7CDF1D76AC3D00143822 /* SwiftyJSON.framework in Frameworks */,
 				440D7CDD1D76AC3A00143822 /* RxSwift.framework in Frameworks */,
+				446584101D8689C2002A28FE /* ReactiveCocoa.framework in Frameworks */,
 				440D7CDB1D76AC3500143822 /* Alamofire.framework in Frameworks */,
 				89D353851DFBD9DD6C0F8304 /* Pods_NBPrivateDemo.framework in Frameworks */,
 			);
@@ -109,6 +132,8 @@
 		0B6E9ABA73F9E7C4E9EBF769 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4465840C1D86899E002A28FE /* ReactiveCocoa.framework */,
+				4465840D1D86899E002A28FE /* Result.framework */,
 				440D7CE01D76C9F900143822 /* RxCocoa.framework */,
 				440D7CDE1D76AC3D00143822 /* SwiftyJSON.framework */,
 				440D7CDC1D76AC3A00143822 /* RxSwift.framework */,
@@ -144,6 +169,7 @@
 		440D7C911D7589E300143822 /* NBPrivateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				440D7CE51D780D2900143822 /* Extension */,
 				440D7CE21D76CEA900143822 /* BaseViewController */,
 				440D7CD21D7688E000143822 /* Home */,
 				440D7CD71D768E4D00143822 /* Utils */,
@@ -239,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				440D7CD81D768E6B00143822 /* NBRouter.swift */,
+				4466B0E61D86AEE0008E787D /* RAC.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -249,6 +276,13 @@
 				440D7CE31D76CECC00143822 /* NBViewController.swift */,
 			);
 			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		440D7CE51D780D2900143822 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		822B749436EBB1D483C04AC9 /* Pods */ = {
@@ -273,6 +307,7 @@
 				440D7C8D1D7589E300143822 /* Resources */,
 				0E943C42BCBD5E454DE92919 /* Embed Pods Frameworks */,
 				3E0F2EAC5B25F4DF42F96CB7 /* Copy Pods Resources */,
+				446584121D8689C2002A28FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,6 +480,7 @@
 				440D7CD01D767CB900143822 /* NBNavigationControllerStack.swift in Sources */,
 				440D7CC71D758F8E00143822 /* NBViewModelServices.swift in Sources */,
 				440D7CD91D768E6B00143822 /* NBRouter.swift in Sources */,
+				4466B0E71D86AEE0008E787D /* RAC.swift in Sources */,
 				440D7CD61D76891100143822 /* HomeViewModel.swift in Sources */,
 				440D7CCC1D758FDF00143822 /* NBViewModel.swift in Sources */,
 				440D7C951D7589E300143822 /* ViewController.swift in Sources */,

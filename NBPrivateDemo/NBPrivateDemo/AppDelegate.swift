@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.mNavigationControllerStack = NBNavigationControllerStack(services: self.services!)
         
         let homeViewModel : HomeViewModel = HomeViewModel(service:self.services,parmas: ["title":"home"])
-        self.services?.resetRootViewModel(homeViewModel)
+        self.services?.resetRoot(homeViewModel)
    
         self.window?.makeKeyAndVisible()
         return true

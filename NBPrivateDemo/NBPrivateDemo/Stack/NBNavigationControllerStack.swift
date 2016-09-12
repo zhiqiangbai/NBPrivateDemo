@@ -37,8 +37,8 @@ class NBNavigationControllerStack : NSObject{
      - returns:离开时的那个控制器
      */
     func popNavigationController()->UINavigationController {
-        assert(self.navigationControllers.last==nil, "popNavigationController Error:the self.navigationControllers.last = nil")
-        let navigateionController : UINavigationController = self.navigationControllers.last!
+        assert(self.navigationControllers.last != nil, "popNavigationController Error:the self.navigationControllers.last = nil")
+        let navigateionController = self.navigationControllers.last!
         self.navigationControllers.removeLast()
         return navigateionController
     }
@@ -49,8 +49,8 @@ class NBNavigationControllerStack : NSObject{
      - returns: 当前控制器
      */
     func topNavigationController() -> UINavigationController {
-        assert(self.navigationControllers.last==nil, "popNavigationController Error:the self.navigationControllers.last = nil")
-        let navigateionController : UINavigationController = self.navigationControllers.last!
+        assert(self.navigationControllers.last != nil, "topNavigationController Error:the self.navigationControllers.last = nil")
+        let navigateionController = self.navigationControllers.last!
         return navigateionController
     }
     

@@ -11,23 +11,80 @@ import UIKit
 class NBViewModelServicesImpl : NBViewModelServices{
     let appdelegate  = UIApplication.sharedApplication().delegate as! AppDelegate
     
-    func pushViewModel(viewModel: NBViewModel, animated: Bool) {
+    /**
+     push到指定界面
+     
+     - parameter viewModel: 指定界面的viewmodel
+     - parameter animated:  是否需要动画
+     */
+    func push(viewModel: NBViewModel, animated: Bool) {
         let viewController = NBRouter.defaultRouter.viewControllerFor(viewModel);
         viewController.mViewModel = viewModel
         self.appdelegate.navigationControlllerStack?.topNavigationController().pushViewController(viewController, animated: animated)
     }
+
+    /**
+     pop到指定界面
+     
+     - parameter viewModel: 指定界面的viewmodel
+     */
+    func popTo(viewModel: NBViewModel , animated: Bool){
+        let viewController = NBRouter.defaultRouter.viewControllerFor(viewModel);
+        viewController.mViewModel = viewModel
+        self.appdelegate.navigationControlllerStack?.topNavigationController().popToViewController(viewController, animated: animated)
+    }
     
-    func pushViewModel(animated: Bool) {}
+    /**
+     离开当前界面
+     
+     - parameter animated: 是否需要动画
+     */
+    func pop(animated: Bool) {
+        let viewController = self.appdelegate.navigationControlllerStack?.topNavigationController()
+
+        if viewController?.viewControllers.count>1 {
+            viewController?.popViewControllerAnimated(animated)
+        }
+    }
+    /**
+     导航栏跳转回到首页
+     
+     - parameter animated: 是否需要动画
+     */
+    func popToRoot(animated: Bool) {
+        let viewController = self.appdelegate.navigationControlllerStack?.topNavigationController()
+        if viewController?.viewControllers.count>1 {
+            viewController?.popToRootViewControllerAnimated(animated)
+        }
+    }
+    /**
+     模态跳转到指定界面
+     
+     - parameter viewModel:  指定界面ViewModel
+     - parameter animated:   是否需要动画
+     - parameter completion: 回调
+     */
+    func present(viewModel: NBViewModel, animated: Bool, completion: VoidClosures) {
+        let viewController = NBRouter.defaultRouter.viewControllerFor(viewModel);
+        viewController.mViewModel = viewModel
+        self.appdelegate.navigationControlllerStack?.topNavigationController().presentViewController(viewController, animated: animated, completion: completion)
+    }
+    /**
+     模态跳转离开当前界面
+     
+     - parameter animated:   是否需要动画
+     - parameter completion: 回调
+     */
+    func dismiss(animated: Bool, completion: VoidClosures) {
+        self.appdelegate.navigationControlllerStack?.topNavigationController().dismissViewControllerAnimated(animated, completion: completion)
+    }
     
-    func popViewModel(animated: Bool) {}
-    
-    func popToRootViewModel(animated: Bool) {}
-    
-    func presentViewModel(viewModel: NBViewModel, animated: Bool, completion: VoidClosures) {}
-    
-    func dismissViewModel(animated: Bool, completion: VoidClosures) {}
-    
-    func resetRootViewModel(viewModel: NBViewModel) {
+    /**
+     设置根控制器
+     
+     - parameter viewModel: 根控制器ViewModel
+     */
+    func resetRoot(viewModel: NBViewModel) {
         appdelegate.navigationControlllerStack?.navigationControllers.removeAll()
         let viewController = NBRouter.defaultRouter.viewControllerFor(viewModel);
         viewController.mViewModel = viewModel
